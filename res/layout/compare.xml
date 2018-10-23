@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/finalback" >
+
+    <ImageView
+        android:id="@+id/compareview1"
+        android:layout_width="136dp"
+        android:layout_height="205dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/blackblack" />
+
+    <ImageView
+        android:id="@+id/compareview2"
+        android:layout_width="136dp"
+        android:layout_height="205dp"
+        
+        android:layout_marginLeft="30dp"
+        android:layout_alignTop="@+id/compareview1"
+        android:layout_toRightOf="@+id/compareview1"
+        android:src="@drawable/letsgo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/compareview1"
+        android:layout_below="@+id/compareview1"
+        android:text="完成進度(0/10)"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/similar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:editable="true"
+        android:text="相似度："
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/again"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/similar"
+        android:src="@drawable/buttonagain" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/again"
+        android:scaleType="fitXY"
+        android:src="@drawable/buttonnext" />
+
+    <ImageView
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/next"
+        android:scaleType="fitXY"
+        android:src="@drawable/buttongift" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/compareview2"
+        android:layout_alignLeft="@+id/compareview1"
+        android:text="   " />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/similar"
+        android:layout_alignRight="@+id/compareview2"
+        android:layout_below="@+id/compareview2"
+        android:text="距離提示" 
+        android:textSize="15sp"/>
+
+
+
+
+</RelativeLayout>
